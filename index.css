@@ -1,0 +1,123 @@
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color:#fcf3cf;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 8vh;
+  display: flex;
+}
+
+nav a {
+  padding: 100vh 40px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333232;
+}
+
+a:hover{
+    background-color: #f4d03f;
+}
+
+.hero {
+  background-image: url(cartago.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.hero .buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.hero .buttons a {
+  background-color: #fcf3cf;
+  color: rgb(36, 36, 36);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: background 0.3s;
+}
+
+.hero .buttons a:hover {
+  background-color: #f4d03f;
+}
+
+.form-bar {
+  margin-top: -50px;
+  z-index: 3;
+  position: relative;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-bar input,
+.form-bar select,
+.form-bar button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-bar button {
+  background-color: #fcf3cf;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-bar button:hover {
+  background-color: #f4d03f;
+}
